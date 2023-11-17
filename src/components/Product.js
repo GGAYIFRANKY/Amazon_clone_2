@@ -14,6 +14,7 @@ function Product ({id, title, price, description, category, image}){
 	const [hasPrime] = useState(Math.random() < 0.5);
 
 	return (
+
 		<div className="relative flex flex-col m-5 bg-white z-30 p-10">
 			<p className="absolute top-2 right-2 text-xs italic text-gray-400">{category}</p>
 
@@ -32,8 +33,7 @@ function Product ({id, title, price, description, category, image}){
 			<p className="text-xs my-2 line-clamp-2">{description}</p>
 
 			<div className="mb-5">
-					<h4>{price}</h4>
-
+				<p>$ {price}</p>
 			</div>
 
 			{hasPrime && (
@@ -45,7 +45,7 @@ function Product ({id, title, price, description, category, image}){
 
 			<button className="mt-auto button">Add to Basket</button>
 			
-		</div>
+		</div> 
 	)
 }
 

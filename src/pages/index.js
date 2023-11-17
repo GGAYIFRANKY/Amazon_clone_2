@@ -28,7 +28,7 @@ export async function getServerSideProps(context){
     props: {
       products,
     },
-  };
+  }
 }
 
 //GET >>>> https://fakestoreapi.com/products
